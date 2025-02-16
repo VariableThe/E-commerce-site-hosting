@@ -174,95 +174,121 @@
       </style>
 </head>
 <body class="bg-gray-100 min-h-screen flex flex-col">
-    <header class="bg-white shadow-md p-4 flex justify-between items-center">
-        <!-- <h1 class="text-xl font-bold">E-Commerce Store</h1> -->
-        <img src="resources\Wapple logo.png" alt="E-Commerce Store Logo" class="h-10">
-        <nav>
+    <!-- Header Section -->
+<header class="bg-white shadow-md p-4 flex justify-between items-center relative z-50">
+  <img src="resources\Wapple logo.png" alt="E-Commerce Store Logo" class="h-10">
+  <nav>
+      <label class="main">
+          Home
+          <input class="inp" type="checkbox" />
+          <div class="bar">
+              <span class="top bar-list"></span>
+              <span class="middle bar-list"></span>
+              <span class="bottom bar-list"></span>
+          </div>
+          <section class="menu-container">
+              <a href="cart.html" class="menu-list">Cart</a>
+              <a href="checkout.html" class="menu-list">Checkout</a>
+          </section>
+      </label>
+  </nav>
+</header>
 
-            <label class="main">
-                Menu
-                <input class="inp" type="checkbox" />
-                <div class="bar">
-                  <span class="top bar-list"></span>
-                  <span class="middle bar-list"></span>
-                  <span class="bottom bar-list"></span>
-                </div>
-                <section class="menu-container">
-                  <a href="cart.html" class="menu-list">Cart</a>
-                  <a href="checkout.html" class="menu-list">Checkout</a>
-                </section>
-              </label>
-              
-              
-        </nav>
-    </header>
+<!-- Hero Section -->
+<section class="relative bg-gray-800 text-white py-20 text-center z-10">
+  <div class="container mx-auto relative z-20">
+      <h1 class="text-4xl font-bold mb-4">Welcome to Our Store</h1>
+      <p class="text-lg mb-6">Find the best products at unbeatable prices</p>
+      <a href="#" class="bg-blue-500 px-6 py-3 rounded-lg text-white font-semibold hover:bg-blue-600">Shop Now</a>
+  </div>
+  <img src="resources\Wapple Banner.png" alt="Hero Image" class="absolute top-0 left-0 w-full h-full object-cover opacity-50 z-0">
+</section>
+    
     <main class="container mx-auto p-4 flex-grow">
         <section class="bg-white shadow-md rounded-lg p-6 mb-6">
             <h2 class="text-2xl font-bold mb-4">Featured Products</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="border p-4 rounded-lg bg-gray-50">
-                    <img src="resources\Mechanical Keyboard Website.png" alt="Product 1" class="w-full mb-2">
+                <div class="border p-4 rounded-lg bg-gray-50 overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                    <img src="resources\Mechanical Keyboard Website.png" alt="Product 1" class="w-full mb-2 transform transition-transform duration-300 hover:scale-105">
                     <h3 class="text-lg font-semibold">Mechanical Keyboard</h3>
                     <p class="text-gray-700">$29.99</p>
-                    <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
+                    <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">
+                      Add to Cart
+                  </button>
                 </div>
-                <div class="border p-4 rounded-lg bg-gray-50">
-                    <img src="resources\Gaming Headset Webiste.png" alt="Product 2" class="w-full mb-2">
+                <div class="border p-4 rounded-lg bg-gray-50 overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                    <img src="resources\Gaming Headset Webiste.png" alt="Product 2" class="w-full mb-2 transform transition-transform duration-300 hover:scale-105">
                     <h3 class="text-lg font-semibold">Gaming Headset</h3>
                     <p class="text-gray-700">$39.99</p>
-                    <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
+                    <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">
+                      Add to Cart
+                  </button>
                 </div>
-                <div class="border p-4 rounded-lg bg-gray-50">
-                    <img src="resources/Smartwatch Website.png" alt="Product 3" class="w-full mb-2">
+                <div class="border p-4 rounded-lg bg-gray-50 overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                    <img src="resources/Smartwatch Website.png" alt="Product 3" class="w-full mb-2 transform transition-transform duration-300 hover:scale-105">
                     <h3 class="text-lg font-semibold">Smartwatch</h3>
                     <p class="text-gray-700">$49.99</p>
-                    <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
+                    <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">
+                      Add to Cart
+                  </button>
                 </div>
-                <div class="border p-4 rounded-lg bg-gray-50">
-                  <img src="resources/Power Bank website.png" alt="Product 3" class="w-full mb-2">
+                <div class="border p-4 rounded-lg bg-gray-50 overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                  <img src="resources/Power Bank website.png" alt="Product 3" class="w-full mb-2 transform transition-transform duration-300 hover:scale-105">
                   <h3 class="text-lg font-semibold">Power Bank</h3>
                   <p class="text-gray-700">$49.99</p>
-                  <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
+                  <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">
+                    Add to Cart
+                </button>
               </div>
-              <div class="border p-4 rounded-lg bg-gray-50">
-                <img src="resources/6090 GPU Website.png" alt="Product 3" class="w-full mb-2">
+              <div class="border p-4 rounded-lg bg-gray-50 overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                <img src="resources/6090 GPU Website.png" alt="Product 3" class="w-full mb-2 transform transition-transform duration-300 hover:scale-105">
                 <h3 class="text-lg font-semibold">6090 GPU</h3>
                 <p class="text-gray-700">$49.99</p>
-                <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
+                <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">
+                  Add to Cart
+              </button>
             </div>
-            <div class="border p-4 rounded-lg bg-gray-50">
-              <img src="resources\Wireless Charger Website.png" alt="Product 3" class="w-full mb-2">
+            <div class="border p-4 rounded-lg bg-gray-50 overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              <img src="resources\Wireless Charger Website.png" alt="Product 3" class="w-full mb-2 transform transition-transform duration-300 hover:scale-105">
               <h3 class="text-lg font-semibold">Wireless chargers</h3>
               <p class="text-gray-700">$49.99</p>
-              <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
+              <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">
+                Add to Cart
+            </button>
           </div>
-          <div class="border p-4 rounded-lg bg-gray-50">
-            <img src="resources\Gaming Mouse Website.png" alt="Product 3" class="w-full mb-2">
+          <div class="border p-4 rounded-lg bg-gray-50 overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            <img src="resources\Gaming Mouse Website.png" alt="Product 3" class="w-full mb-2 transform transition-transform duration-300 hover:scale-105">
             <h3 class="text-lg font-semibold">Gaming Mouse</h3>
             <p class="text-gray-700">$49.99</p>
-            <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
+            <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">
+              Add to Cart
+          </button>
         </div>
-        <div class="border p-4 rounded-lg bg-gray-50">
-          <img src="resources\Monitor Website.png" alt="Product 3" class="w-full mb-2">
+        <div class="border p-4 rounded-lg bg-gray-50 overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+          <img src="resources\Monitor Website.png" alt="Product 3" class="w-full mb-2 transform transition-transform duration-300 hover:scale-105">
           <h3 class="text-lg font-semibold">Monitor</h3>
           <p class="text-gray-700">$49.99</p>
-          <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
+          <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">
+            Add to Cart
+        </button>
       </div>
-      <div class="border p-4 rounded-lg bg-gray-50">
-        <img src="resources\Deskmat Website.png" alt="Product 3" class="w-full mb-2">
+      <div class="border p-4 rounded-lg bg-gray-50 overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
+        <img src="resources\Deskmat Website.png" alt="Product 3" class="w-full mb-2 transform transition-transform duration-300 hover:scale-105">
         <h3 class="text-lg font-semibold">Deskmats
         </h3>
         <p class="text-gray-700">$49.99</p>
-        <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
+        <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">
+          Add to Cart
+      </button>
     </div>
 
             </div>
         </section>
         <section class="bg-white shadow-md rounded-lg p-6">
             <h2 class="text-2xl font-bold mb-4">Latest Deals</h2>
-            <p class="text-gray-700">We are currently facing a shortage of "produce" because of some legal issues, but we will be back with the full stock soon. Subscribe to our newsletter for the latest deals and promotions.</p>
+            <p class="text-gray-700">Subscribe to our newsletter for the latest deals and promotions.</p>
             <input type="email" placeholder="Enter your email" class="border p-2 rounded mt-2 w-full">
-            <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded w-full">Subscribe</button>
+            <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded w-full hover:bg-blue-600 transition-colors duration-300">Subscribe</button>
         </section>
     </main>
     <footer class="bg-white shadow-md p-4 text-center mt-8">
